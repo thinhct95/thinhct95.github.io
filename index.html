@@ -21,11 +21,38 @@
 
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="scss/custom.scss">
 
+  <style type="text/css">
+    #experience {
+      background-image: url('img/office_desk_487477.jpg');
+      background-size: cover;
+    }
+
+    #about {
+      background-image: url('img/ubuntu-dark.jpg');
+      background-size: cover;
+    }
+
+    #education {
+      background-image: url('img/dark-tree.jpg');
+      background-size: cover;
+    }
+
+    #skills {
+      background-image: url('img/desert-night.jpg');
+      background-size: cover;
+    }
+
+    #interests {
+      background-image: url('img/plume.png');
+      background-size: cover;
+    }
+  </style>
 </head>
 
 <body id="page-top">
-
+  <!-- left menu -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
       <span class="d-none d-lg-block">
@@ -58,9 +85,12 @@
       </ul>
     </div>
   </nav>
+  <!-- End left menu -->
 
+  <!-- right content -->
   <div class="main container-fluid p-0">
 
+    <!-- Basic information -->
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
       <div class="w-100">
         <h1 class="mb-0 text-warning">Thinh
@@ -94,23 +124,33 @@
         </div>
       </div>
     </section>
+    <!-- end Basic information -->
 
-    <hr class="m-0">
 
+    <!-- Experience -->
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
       <div class="w-100">
-        <h2 class="mb-5">Experience</h2>
+        <h2 class="mb-5 text-primary">Experience</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Fullstack Developer</h3>
+            <h3 class="mb-0 text-primary">Fullstack Developer</h3>
             <div class="subheading mb-3">NUS Technology</div>
 
             <p>
               I started working as a developer under the supervision of the senior software engineer about 10 months for customers from Japan and Hong Kong until now.
             </p>
+            <ul>
+              <li>Write APIs for another apps</li>
+              <li>Implement PKCE flow for SSO using Auth0</li>
+              <li>Design APIs using Ruby on rails</li>
+              <li>Data visualization using Highcharts.js</li>
+              <li>Use Phraseapp for work with localization team</li>
+              <li>Connect and manage database with PostgreSQL Admin and Heroku</li>
+              <li>Deploy apps using Heroku</li>
+            </ul>
 
-            <h3>Projects</h3>
+            <h3 class="text-primary">Projects</h3>
             <ul>
               <li>
                 <p>community.r.design</p>
@@ -121,22 +161,23 @@
             </ul>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">April 2018 - Present</span>
+            <span class="text-warning">
+              <b>April 2018 - Present</b>
+            </span>
           </div>
         </div>
       </div>
-
     </section>
+    <!-- End Experience -->
 
-    <hr class="m-0">
-
+    <!-- Education -->
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
       <div class="w-100">
-        <h2 class="mb-5">Education</h2>
+        <h2 class="mb-5 text-primary">Education</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Ho Chi Minh University of Technology</h3>
+            <h3 class="mb-0 text-primary">Ho Chi Minh University of Technology</h3>
             <div class="subheading mb-3">Bachelor of Computer Science</div>
             <div>
               <p class="mb-0">GPA: 6.63</p>
@@ -145,17 +186,19 @@
 
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">August 2013 - May 2019</span>
+            <span class="text-warning">
+              <b>August 2013 - May 2019</b>
+            </span>
           </div>
         </div>
       </div>
     </section>
+    <!-- End Education -->
 
-    <hr class="m-0">
-
+    <!-- Skills -->
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
       <div class="w-100">
-        <h2 class="mb-5">Skills</h2>
+        <h2 class="mb-5 text-primary">Skills</h2>
 
         <div class="subheading mb-3">Programming Languages &amp; Tools</div>
         <ul class="list-inline dev-icons">
@@ -191,54 +234,19 @@
         </ul>
       </div>
     </section>
+    <!-- End Skills -->
 
-    <hr class="m-0">
-
+    <!-- Interests -->
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
       <div class="w-100">
-        <h2 class="mb-5">Interests</h2>
+        <h2 class="mb-5 text-primary">Interests</h2>
         <p>Apart from being a web developer, I enjoy most of my time being outdoors. I spent a lot of time for reading books, listening to music, studying English and go out with my friends.</p>
         <p class="mb-0">When forced indoors, I follow a number of movies and television shows or play guitar.</p>
       </div>
     </section>
-
-    <hr class="m-0">
-<!--
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
-      <div class="w-100">
-        <h2 class="mb-5">Awards &amp; Certifications</h2>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Google Analytics Certified Developer</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            Mobile Web Specialist - Google Certification</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            2<sup>nd</sup>
-            Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            1<sup>st</sup>
-            Place - James Buchanan High School - Hackathon 2006</li>
-          <li>
-            <i class="fa-li fa fa-trophy text-warning"></i>
-            3<sup>rd</sup>
-            Place - James Buchanan High School - Hackathon 2005</li>
-        </ul>
-      </div>
-    </section> -->
-
+    <!-- End Interests -->
   </div>
+  <!-- End right content -->
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
